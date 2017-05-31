@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical|right"
+    android:orientation="vertical"
+    tools:showIn="@layout/layout_my_cneter_bottom_update_information">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:drawableLeft="@drawable/shape_update_information_itme_right_point"
+        android:drawablePadding="6dp"
+        android:gravity="right"
+        android:text="此项不能修改"
+        android:textColor="@color/red" />
+</LinearLayout>

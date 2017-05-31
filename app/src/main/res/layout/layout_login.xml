@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.LoginActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.66"
+        android:background="@mipmap/login_top_bg">
+
+        <EditText
+            android:id="@+id/et_login_password"
+            style="@style/editText_child"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:drawableLeft="@mipmap/login_password"
+            android:drawableStart="@mipmap/login_password"
+            android:hint="@string/login_hit_password"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/et_login_user"
+            style="@style/editText_child"
+            android:layout_above="@id/et_login_password"
+            android:layout_marginBottom="20dp"
+            android:drawableLeft="@mipmap/login_user"
+            android:drawableStart="@mipmap/login_user"
+            android:hint="@string/login_hit_user" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.61"
+        android:background="#F1F3F9">
+
+        <TextView
+            android:id="@+id/tv_login_register_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="28dp"
+            android:text="@string/login_register_user"
+            android:textColor="@drawable/textview_color_green_red"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/bt_login_button"
+            style="@style/left_right_padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_login_register_user"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/selector_login_button"
+            android:text="@string/login_button"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_login_forget_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_login_register_user"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/tv_login_register_user"
+            android:text="@string/login_forget_password"
+            android:textColor="@drawable/textview_color_green_red"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/cb_login_remember_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_login_register_user"
+            android:layout_alignRight="@id/bt_login_button"
+            android:layout_alignTop="@id/tv_login_register_user"
+            android:button="@null"
+            android:checked="false"
+            android:drawableLeft="@drawable/selector_login_radiobutton_bg"
+            android:text="@string/login_remember_password"
+            android:textColor="@color/thin_green"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/login_bottom_bg"
+        android:contentDescription="@string/login_activity_bottom_iamge" />
+
+</LinearLayout>

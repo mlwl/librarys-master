@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:scrollbars="none"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/my_center_bottom_part_normal_my_information"
+            style="@style/my_center_bottom_part_normal_item_layout">
+
+            <TextView
+                style="@style/my_center_bottom_part_normal_item_left_style"
+                android:drawableLeft="@mipmap/my_center_bottom_part_my_information"
+                android:text="我的资料" />
+
+            <TextView
+                style="@style/my_center_bottom_part_normal_item_right_style"
+                android:text="查看,更新个人信息" />
+        </RelativeLayout>
+
+        <View style="@style/my_center_bottom_part_normal_item_middle_line" />
+
+        <RelativeLayout
+            android:id="@+id/my_center_bottom_part_normal_me_message"
+            style="@style/my_center_bottom_part_normal_item_layout">
+
+            <TextView
+                style="@style/my_center_bottom_part_normal_item_left_style"
+                android:drawableLeft="@mipmap/my_center_bottom_part_me_message"
+                android:text="我的信息" />
+
+            <TextView
+                style="@style/my_center_bottom_part_normal_item_right_style"
+                android:text="查看,系统信息" />
+        </RelativeLayout>
+
+        <View style="@style/my_center_bottom_part_normal_item_middle_line" />
+
+        <RelativeLayout
+            android:id="@+id/my_center_bottom_part_normal_my_order"
+            style="@style/my_center_bottom_part_normal_item_layout">
+
+            <TextView
+                style="@style/my_center_bottom_part_normal_item_left_style"
+                android:drawableLeft="@mipmap/my_center_bottom_part_my_order"
+                android:text="我的预约" />
+
+            <TextView
+                style="@style/my_center_bottom_part_normal_item_right_style"
+                android:text="查看,取消个人预约" />
+        </RelativeLayout>
+
+        <View style="@style/my_center_bottom_part_normal_item_middle_line" />
+
+        <RelativeLayout
+            android:id="@+id/my_center_bottom_part_normal_my_integral"
+            style="@style/my_center_bottom_part_normal_item_layout">
+
+            <TextView
+                style="@style/my_center_bottom_part_normal_item_left_style"
+                android:drawableLeft="@mipmap/my_center_bottom_part_my_integral"
+                android:text="我的积分" />
+
+            <TextView
+                style="@style/my_center_bottom_part_normal_item_right_style"
+                android:text="查看个人积分明细" />
+        </RelativeLayout>
+
+        <View style="@style/my_center_bottom_part_normal_item_middle_line" />
+
+        <RelativeLayout
+            android:id="@+id/my_center_bottom_part_normal_my_order_voucher"
+            style="@style/my_center_bottom_part_normal_item_layout">
+
+            <TextView
+                style="@style/my_center_bottom_part_normal_item_left_style"
+                android:drawableLeft="@mipmap/my_order_voucher"
+                android:text="预约凭证" />
+
+            <TextView
+                style="@style/my_center_bottom_part_normal_item_right_style"
+                android:text="查看我的预约凭证" />
+        </RelativeLayout>
+
+        <View style="@style/my_center_bottom_part_normal_item_middle_line" />
+    </LinearLayout>
+</ScrollView>

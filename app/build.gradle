@@ -1,0 +1,62 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+
+//        multiDexEnabled true//=========================
+
+        applicationId "com.minji.librarys"
+        minSdkVersion 14
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+        manifestPlaceholders = [
+                GETUI_APP_ID    : "DbcZQZizUv5oARbNh1IfH6",
+                GETUI_APP_KEY   : "dJLCPjdmj0A7e3Xqi7tCj7",
+                GETUI_APP_SECRET: "LNSyMzfdGlAaVj8bATiZh4",
+                PACKAGE_NAME    : applicationId
+        ]
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "arm64-v8a", "mips", "mips64", "x86", "x86_64"
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs' //就是你放aar的目录地址
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile files('libs/gson.jar')
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    compile 'com.squareup.okio:okio:1.6.0'
+    compile 'com.android.support:support-v4:+'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile name: 'SMSSDK-2.1.1', ext: 'aar'
+    compile 'com.getui:sdk:2.9.0.0'
+    compile files('libs/mpandroidchartlibrary-2-2-4.jar')
+}
+
+/*
+allprojects {
+    gradle.projectsEvaluated {
+        tasks.withType(JavaCompile) {
+            options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation"
+        }
+    }
+}*/

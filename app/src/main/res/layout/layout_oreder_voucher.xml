@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <LinearLayout style="@style/order_voucher_linerlayout_style">
+
+        <TextView
+            style="@style/order_voucher_textview_style_left"
+            android:text="座位号:  " />
+
+        <TextView
+            android:id="@+id/tv_order_voucher_seat_name"
+            style="@style/order_voucher_textview_style_right"
+            android:text="1-东阅览室-0100118" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/order_voucher_linerlayout_style">
+
+        <TextView
+            style="@style/order_voucher_textview_style_left"
+            android:text="座位状态:  " />
+
+        <TextView
+            android:id="@+id/tv_order_voucher_seat_status"
+            style="@style/order_voucher_textview_style_right"
+            android:text="1-东阅览室-0100118" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/order_voucher_linerlayout_style">
+
+        <TextView
+            style="@style/order_voucher_textview_style_left"
+            android:text="占用人:  " />
+
+        <TextView
+            android:id="@+id/tv_order_voucher_seat_use_person"
+            style="@style/order_voucher_textview_style_right"
+            android:text="1-东阅览室-0100118" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

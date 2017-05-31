@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.9"
+        android:background="@color/my_center_top_background"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:paddingTop="20dp">
+
+        <com.minji.librarys.widget.roundediamgeview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tv_my_center_top_part_head_portrait"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/text_people"
+            app:riv_border_color="@color/my_center_top_image_border_color"
+            app:riv_border_width="5dip"
+            app:riv_corner_radius="30dip"
+            app:riv_mutate_background="true"
+            app:riv_oval="true"
+            app:riv_tile_mode="repeat" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:background="@color/my_center_top_background"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/tv_my_center_top_part_student_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="学号 : ------"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <include layout="@layout/item_my_center_middle_integral_detail" />
+
+    <FrameLayout
+        android:id="@+id/fl_my_center_bottom_part_contents"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.5">
+
+        <include layout="@layout/layout_my_cneter_bottom_normal"/>
+
+    </FrameLayout>
+
+</LinearLayout>

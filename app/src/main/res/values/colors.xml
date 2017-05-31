@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="thin_gray">#DADADA</color>
+    <color name="white">#FFF</color>
+    <color name="thin_green">#298D55</color>
+    <color name="black">#000</color>
+    <color name="hint_color">#8D8D8D</color>
+    <color name="main_outside_reservation">#DD9413</color>
+    <color name="main_me_center">#DD5F13</color>
+    <color name="main_serach_seat">#278C54</color>
+    <color name="main_booking_rules">#00AFD6</color>
+    <color name="main_stadium_seats">#2B942B</color>
+    <color name="main_title_setting">#DD9413</color>
+    <color name="main_statistics_report">#2B942B</color>
+    <color name="my_darker_gray">#aaa</color>
+    <color name="text_gray">#848484</color>
+    <color name="thib_blue">#7DBCE4</color>
+    <color name="my_center_top_background">#278C54</color>
+    <color name="my_center_top_image_border_color">#14703E</color>
+    <color name="my_center_middle_background">#257F4C</color>
+    <color name="my_cneter_bottom_part_normal_item_background">#EEECED</color>
+    <color name="my_cneter_bottom_part_normal_item_right_text">#9C9C9C</color>
+    <color name="red">#FF0000</color>
+    <color name="clear_search_histroy">#FF0000</color>
+    <color name="expend_integral_number_color">#FF6C09</color>
+    <color name="loading_background_thin_gray">#66000000</color>
+    <color name="window_message_read">#a9b7b7</color>
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.minji.librarys.ui.SelectAreasActivity">
+
+
+    <RelativeLayout
+        style="@style/left_right_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/shape_select_areas_top_bg"
+        android:padding="6dp">
+
+        <TextView
+            android:id="@+id/tv_select_area_top_middle"
+            style="@style/select_area_top_textview"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:drawableLeft="@mipmap/select_area_top_orange"
+            android:text="@string/select_area_top_no_use" />
+
+        <TextView
+            style="@style/select_area_top_textview"
+            android:layout_toLeftOf="@id/tv_select_area_top_middle"
+            android:drawableLeft="@mipmap/select_area_top_green"
+            android:text="@string/select_area_top_free" />
+
+
+        <TextView
+            style="@style/select_area_top_textview"
+            android:layout_toRightOf="@id/tv_select_area_top_middle"
+            android:drawableLeft="@mipmap/select_area_top_gray"
+            android:text="@string/select_area_top_occupation" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_select_area_reading_room_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_select_area_to_dialog_reading_room"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="7dp"
+            android:drawableTop="@mipmap/select_reading_room"
+            android:text="@string/select_area_reading_room"
+            android:textColor="@color/text_gray"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+
+</LinearLayout>

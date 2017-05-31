@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_main_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="6dp"
+    android:background="@drawable/selector_main_outside_reservation"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_main_item_top_iamge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/main_outside_reservation" />
+
+        <TextView
+            android:id="@+id/tv_main_item_middle_chinese_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_main_item_top_iamge"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            android:text="馆外预约"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tv_main_item_buttom_english_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_main_item_middle_chinese_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:singleLine="true"
+            android:text="make a appitionlec"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+</LinearLayout>

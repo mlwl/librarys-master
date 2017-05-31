@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.minji.librarys.ui.RegisterAndForgetActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.08">
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/thin_green" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_froget_tab_phone_find"
+                style="@style/TabsPublicStyle"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/tabs_background_press"
+                android:text="@string/forget_phone_find"
+                android:textColor="@color/thin_green" />
+
+            <TextView
+                android:id="@+id/tv_froget_tab_email_find"
+                style="@style/TabsPublicStyle"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/tabs_background_default"
+                android:text="@string/forget_email_find"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_forget_email_or_phone"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.2">
+
+    </FrameLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/login_bottom_bg"
+        android:contentDescription="@string/login_activity_bottom_iamge" />
+
+</LinearLayout>

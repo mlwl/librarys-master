@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <LinearLayout
+        style="@style/my_center_bottom_part_update_information_item_layout"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            style="@style/update_my_information_part_text"
+            android:text="学号:" />
+
+        <TextView
+            android:id="@+id/tv_update_information_item_study_number"
+            style="@style/update_my_information_part_text"
+            android:layout_marginLeft="16dp"
+            android:text="6546465465" />
+
+        <include layout="@layout/item_update_information_no_amend_text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/my_center_bottom_part_update_information_item_layout"
+        android:layout_marginBottom="14dp">
+
+        <TextView
+            style="@style/update_my_information_part_text"
+            android:text="姓名:" />
+
+        <TextView
+            android:id="@+id/tv_update_information_item_study_name"
+            style="@style/update_my_information_part_text"
+            android:layout_marginLeft="16dp"
+            android:text="张琦" />
+
+        <include layout="@layout/item_update_information_no_amend_text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/my_center_bottom_part_update_information_item_layout"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            style="@style/update_my_information_part_text"
+            android:layout_marginBottom="9dp"
+            android:layout_marginTop="9dp"
+            android:text="手机:" />
+
+        <EditText
+            android:id="@+id/et_update_information_item_phone_number"
+            style="@style/editText_parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/shape_editext_bg_color_gray"
+            android:enabled="false"
+            android:hint="189654545656"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="@color/hint_color" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/my_center_bottom_part_update_information_item_layout"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            style="@style/update_my_information_part_text"
+            android:layout_marginBottom="9dp"
+            android:layout_marginTop="9dp"
+            android:text="邮箱:" />
+
+        <EditText
+            android:id="@+id/et_update_information_item_email_address"
+            style="@style/editText_parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/shape_editext_bg_color_gray"
+            android:enabled="false"
+            android:hint="189654545656@qq.com"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="@color/hint_color" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_update_information_information_make_sure"
+        style="@style/width_hight_mw"
+        android:background="@drawable/selector_login_button"
+        android:text="修改资料"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+</LinearLayout>

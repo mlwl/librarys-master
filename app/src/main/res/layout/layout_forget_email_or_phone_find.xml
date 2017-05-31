@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_marginTop="50dp"
+        android:id="@+id/et_forget_password_find"
+        style="@style/editText_child"
+        android:drawableLeft="@mipmap/login_user"
+        android:drawableStart="@mipmap/login_user"
+        android:hint="@string/forget_password_find" />
+
+    <Button
+        android:layout_marginTop="26dp"
+        android:id="@+id/bt_forget_password_find_affirm"
+        style="@style/left_right_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_login_button"
+        android:text="@string/forget_password_find_affirm"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

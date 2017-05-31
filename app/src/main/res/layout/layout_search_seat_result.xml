@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout style="@style/search_seat_result_ll_style">
+
+        <TextView
+            style="@style/search_seat_result_left_text_style"
+            android:text="座位号:" />
+
+        <TextView
+            android:id="@+id/tv_search_seat_result_right_seat_number"
+            style="@style/search_seat_result_right_text_style"
+            android:text="------" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/search_seat_result_ll_style">
+
+        <TextView
+            style="@style/search_seat_result_left_text_style"
+            android:text="座位状态:" />
+
+        <TextView
+            android:id="@+id/tv_search_seat_result_right_states"
+            style="@style/search_seat_result_right_text_style"
+            android:text="------" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/search_seat_result_ll_style">
+
+        <TextView
+            style="@style/search_seat_result_left_text_style"
+            android:text="占用人:" />
+
+        <TextView
+            android:id="@+id/tv_search_seat_result_right_user_name"
+            style="@style/search_seat_result_right_text_style"
+            android:text="------" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/search_seat_result_ll_style">
+
+        <TextView
+            style="@style/search_seat_result_left_text_style"
+            android:text="联系电话:" />
+
+        <TextView
+            android:id="@+id/tv_search_seat_result_right_mobile"
+            style="@style/search_seat_result_right_text_style"
+            android:text="------" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/search_seat_result_ll_style">
+
+        <TextView
+            style="@style/search_seat_result_left_text_style"
+            android:text="预约时间:" />
+
+        <TextView
+            android:id="@+id/tv_search_seat_result_right_time"
+            style="@style/search_seat_result_right_text_style"
+            android:text="------" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

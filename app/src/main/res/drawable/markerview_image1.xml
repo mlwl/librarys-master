@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <corners android:radius="16dp" />
+    <!-- size:设置图片的大小 -->
+    <size
+        android:width="10dp"
+        android:height="10dp" />
+    <!-- solid:设置颜色 -->
+    <solid android:color="#FF0000" />
+
+</shape>

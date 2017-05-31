@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mainitem="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/main_background"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:paddingTop="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <com.minji.librarys.widget.MainItem
+            android:id="@+id/mi_main_outside_reservation"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            mainitem:itemChinese="@string/main_chinese_outside_reservation"
+            mainitem:itemEnglish="@string/main_english_outside_reservation"
+            mainitem:itemmainbackground="@drawable/selector_main_outside_reservation"
+            mainitem:itmeIamge="@mipmap/main_outside_reservation" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.minji.librarys.widget.MainItem
+                android:id="@+id/mi_main_me_center"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                mainitem:itemChinese="@string/main_chinese_me_center"
+                mainitem:itemEnglish="@string/main_english_me_center"
+                mainitem:itemmainbackground="@drawable/selector_main_me_center"
+                mainitem:itmeIamge="@mipmap/main_me_center" />
+
+            <com.minji.librarys.widget.MainItem
+                android:id="@+id/mi_main_serach_seat"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                mainitem:itemChinese="@string/main_chinese_serach_seat"
+                mainitem:itemEnglish="@string/main_english_serach_seat"
+                mainitem:itemmainbackground="@drawable/selector_main_serach_seat"
+                mainitem:itmeIamge="@mipmap/main_serach_seat" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.minji.librarys.widget.MainItem
+                android:id="@+id/mi_main_booking_rules"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                mainitem:itemChinese="@string/main_chinese_booking_rules"
+                mainitem:itemEnglish="@string/main_english_booking_rules"
+                mainitem:itemmainbackground="@drawable/selector_main_booking_rules"
+                mainitem:itmeIamge="@mipmap/main_booking_rules" />
+
+            <include
+                layout="@layout/itme_main_time"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <com.minji.librarys.widget.MainItem
+                android:id="@+id/mi_main_statement_statistics"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                mainitem:itemChinese="@string/main_chinese_statement_statistics"
+                mainitem:itemEnglish="@string/main_english_statement_statistics"
+                mainitem:itemmainbackground="@drawable/selector_main_statistics_report"
+                mainitem:itmeIamge="@mipmap/main_statement_statistics" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.minji.librarys.widget.MainItem
+                android:id="@+id/mi_main_cancel_order"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                mainitem:itemChinese="@string/main_chinese_stadium_seats"
+                mainitem:itemEnglish="@string/main_english_stadium_seats"
+                mainitem:itemmainbackground="@drawable/selector_main_stadium_seats"
+                mainitem:itmeIamge="@mipmap/main_cancel_reservation" />
+
+            <com.minji.librarys.widget.MainItem
+                android:id="@+id/mi_title_setting"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                mainitem:itemChinese="@string/main_chinese_title_setting"
+                mainitem:itemEnglish="@string/main_english_title_setting"
+                mainitem:itemmainbackground="@drawable/selector_main_title_setting"
+                mainitem:itmeIamge="@mipmap/title_setting" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#F1F3F9">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_register_phone"
+                style="@style/editText_child"
+                android:layout_marginTop="18dp"
+                android:drawableLeft="@mipmap/register_phone"
+                android:drawableStart="@mipmap/register_phone"
+                android:hint="@string/register_phone"
+                android:inputType="phone" />
+
+            <RelativeLayout
+                style="@style/left_right_padding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_provisions_of_height"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/et_register_identifying_code"
+                        style="@style/editText_parent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/register_identifying_code"
+                        android:inputType="number"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/register_xianzhi_edittext_height"
+                        android:src="@mipmap/register_identifying_code" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/bt_register_identifying_code_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/ll_provisions_of_height"
+                    android:background="@drawable/selector_login_button"
+                    android:text="@string/register_identifying_code_button"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+            <EditText
+                android:id="@+id/et_register_student_number"
+                style="@style/editText_child"
+                android:layout_marginTop="18dp"
+                android:drawableLeft="@mipmap/login_user"
+                android:drawableStart="@mipmap/login_user"
+                android:hint="@string/register_student_number"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/et_register_email_address"
+                style="@style/editText_child"
+                android:layout_marginTop="18dp"
+                android:drawableLeft="@mipmap/register_email"
+                android:drawableStart="@mipmap/register_email"
+                android:hint="@string/register_email_address"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/et_register_password"
+                style="@style/editText_child"
+                android:layout_marginTop="18dp"
+                android:drawableLeft="@mipmap/login_password"
+                android:drawableStart="@mipmap/login_password"
+                android:hint="@string/register_password"
+                android:inputType="textPassword" />
+
+            <TextView
+                android:id="@+id/tv_register_already_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="33dp"
+                android:layout_marginTop="9dp"
+                android:text="@string/register_already_user"
+                android:textColor="@color/thin_green"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/bt_register_affirm_button"
+                style="@style/left_right_padding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/selector_login_button"
+                android:text="@string/register_affirm_button"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/login_bottom_bg"
+        android:contentDescription="@string/login_activity_bottom_iamge" />
+</LinearLayout>
